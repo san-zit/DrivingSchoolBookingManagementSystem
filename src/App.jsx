@@ -1,19 +1,19 @@
-import { useState } from 'react'
+import { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import './App.css'
+import "./App.css";
+import Login from "./auth/Login";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
-        <h1>welcome to my page</h1>
-
-
+        <Login />
       </div>
+      <ToastContainer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
